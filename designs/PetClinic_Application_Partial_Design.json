@@ -1,0 +1,478 @@
+{
+  "@self" : "/csa/api/topology-model/topology/869ed722-3c90-4cfd-adc6-1179a70b9d14",
+  "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+  "groupId" : "com.hp.csa",
+  "artifactId" : "2c91808455111c88015514aa57f902f1",
+  "version" : "5.0.0",
+  "displayName" : "PetClinic Application -  Partial Design",
+  "description" : "A two-tier PetClinic Application with Database component installed on MySQL and Application component on Tomcat Server. These components can be deployed on vCenter Servers.",
+  "resources" : [ {
+    "id" : "69d90388-e032-4d76-fcb8-c168ac16685a",
+    "name" : "Application Server",
+    "component" : {
+      "@self" : "/csa/api/topology-model/component-type/2966f971-29e9-42b2-b91a-1673711407fb",
+      "groupId" : "com.hp.csa.type",
+      "artifactId" : "ApplicationServer",
+      "version" : "1"
+    },
+    "properties" : [ {
+      "propertyKey" : "installPath",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "hostname",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "password",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "protocol",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "port",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "username",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    } ],
+    "outgoingRelations" : [ ],
+    "annotations" : {
+      "uniqueName" : "ApplicationServe0001",
+      "displayName" : "69d90388-e032-4d76-fcb8-c168ac16685a",
+      "x" : "788",
+      "description" : "Application Server is a capability component that provides required properties for application servers. Application Server can be associated with concrete components that support this capability, for example PHP and JBoss.",
+      "y" : "324"
+    },
+    "capabilityChars" : [ ],
+    "requirements" : [ ]
+  }, {
+    "id" : "53c568cf-954f-c8ef-90b9-95996d0203ed",
+    "name" : "Database Server",
+    "component" : {
+      "@self" : "/csa/api/topology-model/component-type/61614206-5669-47b8-bc9c-b247248f440d",
+      "groupId" : "com.hp.csa.type",
+      "artifactId" : "DatabaseServer",
+      "version" : "1"
+    },
+    "properties" : [ {
+      "propertyKey" : "hostname",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "password",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string_encrypted"
+      }
+    }, {
+      "propertyKey" : "port",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "type",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "username",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    } ],
+    "outgoingRelations" : [ ],
+    "annotations" : {
+      "uniqueName" : "DatabaseServer0001",
+      "displayName" : "53c568cf-954f-c8ef-90b9-95996d0203ed",
+      "x" : "467",
+      "description" : "Database Server is a capability component that provides required properties for database servers. Database Server can be associated with concrete components that support this capability, for example Oracle and MySQL.",
+      "y" : "326"
+    },
+    "capabilityChars" : [ ],
+    "requirements" : [ ]
+  }, {
+    "id" : "5a1f1c32-be84-6e7d-971c-d260c9edd3e3",
+    "name" : "PetClinic DB Configuration",
+    "component" : {
+      "@self" : "/csa/api/topology-model/component-type/f97522e4-becc-4411-9d57-582a7cac47f8",
+      "groupId" : "com.hp.csa.type.HPOO",
+      "artifactId" : "LibraryIntegrationsHewlettPackardCloudServiceAutomationComponentsHPOOPetClinicDBConfiguration4200000",
+      "version" : "4.20.0000"
+    },
+    "properties" : [ {
+      "propertyKey" : "configurationurl",
+      "propertyValue" : {
+        "value" : "http://hpecsademo.hpswlabs.adapps.hp.com:8080/job/Software/ws/mysqldb_conf.sh",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "mysqlusername",
+      "propertyValue" : {
+        "value" : "root",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "_modifiable_properties",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "mysqlpassword",
+      "propertyValue" : {
+        "value" : "ENC(A02zOEoPIeURT0fZlzojxq+WGyO07FLX)",
+        "type" : "string_encrypted"
+      }
+    }, {
+      "propertyKey" : "artifactusername",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "hostname",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "password",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string_encrypted"
+      }
+    }, {
+      "propertyKey" : "artifactpassword",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string_encrypted"
+      }
+    }, {
+      "propertyKey" : "_enable_modify_during_lifecycle_properties",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "port",
+      "propertyValue" : {
+        "value" : "22",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "response",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "privatekeyPath",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "remotefilepath",
+      "propertyValue" : {
+        "value" : "/tmp",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "servicecommand",
+      "propertyValue" : {
+        "value" : "sh /tmp/mysqldb_conf.sh",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "username",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    } ],
+    "outgoingRelations" : [ {
+      "relationType" : "association",
+      "id" : "bfa5491a-fd80-13bd-6615-875cbcf05cf2",
+      "properties" : [ {
+        "propertyKey" : "_enable_modify_during_lifecycle_properties",
+        "propertyValue" : {
+          "value" : null,
+          "type" : "string"
+        }
+      }, {
+        "propertyKey" : "_modifiable_properties",
+        "propertyValue" : {
+          "value" : null,
+          "type" : "string"
+        }
+      }, {
+        "propertyKey" : "_relation_type",
+        "propertyValue" : {
+          "value" : {
+            "first" : "Association",
+            "second" : "ASSOCIATION"
+          },
+          "type" : "pair"
+        }
+      } ],
+      "relationDescriptorName" : "getDatabaseInfo_LibraryIntegrationsHewlettPackardCloudServiceAutomationComponentsHPOOPetClinicDBConfiguration4200000__VERSION__4^20^0000",
+      "resourceReference" : {
+        "name" : "Database Server"
+      }
+    } ],
+    "annotations" : {
+      "uniqueName" : "PetClinicDBConfi0001",
+      "displayName" : "5a1f1c32-be84-6e7d-971c-d260c9edd3e3",
+      "x" : "469",
+      "y" : "112"
+    },
+    "capabilityChars" : [ ],
+    "requirements" : [ ]
+  }, {
+    "id" : "9b4da342-8b49-8c5d-1db4-8062778c9e3b",
+    "name" : "PetClinic Application 4 Partial Design",
+    "component" : {
+      "@self" : "/csa/api/topology-model/component-type/a22516ee-ff82-4686-ad10-33056421f08f",
+      "groupId" : "com.hp.csa.type.HPOO",
+      "artifactId" : "PetClinicApplication4PartialDesign_bfccdc9dfdf14de788131fd7fdb80f0f",
+      "version" : "1.50.0000"
+    },
+    "properties" : [ {
+      "propertyKey" : "configurationurl",
+      "propertyValue" : {
+        "value" : "http://hpecsademo.hpswlabs.adapps.hp.com:8080/job/Software/ws/petclinic_jdbc_conf.sh",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "hostusername",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "mysqlusername",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "_modifiable_properties",
+      "propertyValue" : {
+        "value" : "artifacturl",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "localfilepath",
+      "propertyValue" : {
+        "value" : "petclinic.war",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "mysqlpassword",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string_encrypted"
+      }
+    }, {
+      "propertyKey" : "apphostname",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "result",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "artifactusername",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "artifactpassword",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string_encrypted"
+      }
+    }, {
+      "propertyKey" : "_enable_modify_during_lifecycle_properties",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "dbhostname",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "dbpassword",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string_encrypted"
+      }
+    }, {
+      "propertyKey" : "port",
+      "propertyValue" : {
+        "value" : "22",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "tomcathome",
+      "propertyValue" : {
+        "value" : "/opt/tomcat7",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "response",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "artifacturl",
+      "propertyValue" : {
+        "value" : "http://16.78.126.21:8080/job/PetClinic-CPE-Builds/80/artifact/target/petclinic.war",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "dbusername",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "privatekeyPath",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "remotefilepath",
+      "propertyValue" : {
+        "value" : "/tmp",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "servicecommand",
+      "propertyValue" : {
+        "value" : "sh /tmp/petclinic_jdbc_conf.sh",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "hostpassword",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string_encrypted"
+      }
+    } ],
+    "outgoingRelations" : [ {
+      "relationType" : "association",
+      "id" : "2ecb5656-778a-0e20-8f7d-6905620d27e3",
+      "properties" : [ {
+        "propertyKey" : "_enable_modify_during_lifecycle_properties",
+        "propertyValue" : {
+          "value" : null,
+          "type" : "string"
+        }
+      }, {
+        "propertyKey" : "_modifiable_properties",
+        "propertyValue" : {
+          "value" : null,
+          "type" : "string"
+        }
+      }, {
+        "propertyKey" : "_relation_type",
+        "propertyValue" : {
+          "value" : {
+            "first" : "Association",
+            "second" : "ASSOCIATION"
+          },
+          "type" : "pair"
+        }
+      } ],
+      "relationDescriptorName" : "deployAppOnPrebakedServer_PetClinicApplication4PartialDesign_bfccdc9dfdf14de788131fd7fdb80f0f__VERSION__1^50^0000__GROUPID__com^hp^csa^type^HPOO",
+      "resourceReference" : {
+        "name" : "Application Server"
+      }
+    }, {
+      "relationType" : "association",
+      "id" : "72a97cfc-fec9-0bd5-01a9-372bf0ea4361",
+      "properties" : [ {
+        "propertyKey" : "_enable_modify_during_lifecycle_properties",
+        "propertyValue" : {
+          "value" : null,
+          "type" : "string"
+        }
+      }, {
+        "propertyKey" : "_modifiable_properties",
+        "propertyValue" : {
+          "value" : null,
+          "type" : "string"
+        }
+      }, {
+        "propertyKey" : "_relation_type",
+        "propertyValue" : {
+          "value" : {
+            "first" : "Association",
+            "second" : "ASSOCIATION"
+          },
+          "type" : "pair"
+        }
+      } ],
+      "relationDescriptorName" : "getDBInfo_PetClinicApplication4PartialDesign_bfccdc9dfdf14de788131fd7fdb80f0f__VERSION__1^50^0000__GROUPID__com^hp^csa^type^HPOO",
+      "resourceReference" : {
+        "name" : "PetClinic DB Configuration"
+      }
+    } ],
+    "annotations" : {
+      "uniqueName" : "PetClinicApplica0001",
+      "displayName" : "9b4da342-8b49-8c5d-1db4-8062778c9e3b",
+      "x" : "787",
+      "description" : "PetClinic Application for Partial Design",
+      "y" : "107"
+    },
+    "capabilityChars" : [ ],
+    "requirements" : [ ]
+  } ],
+  "revision" : 424,
+  "properties" : [ ],
+  "iconUrl" : "/csa/images/library/petclinic.png",
+  "tagIds" : [ {
+    "@self" : "/csa/api/tag/8a818cf8ara15bc772b0145cb6efjhg99"
+  } ],
+  "state" : "UNLOCKED",
+  "partial" : true,
+  "hidden" : false,
+  "profiles" : [ ],
+  "annotations" : {
+    "serviceBlueprintId" : "2c91808455111c88015514aa585202f7",
+    "providerType" : "independent"
+  }
+}
